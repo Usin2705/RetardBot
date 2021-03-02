@@ -21,7 +21,7 @@ limit = 1000000
 # # Download by smaller step to avoid imcomplete result (too man result due to PushShift shards are down???)
 # for i in tqdm(range(73)):
 #     after = before - (i+1)*60*60*24*1
-#     submissions = api.search_submissions(score='>50', sort='desc', sort_type='score', subreddit=subreddit, size=size, before=before, after=after, limit=limit)
+#     submissions = api.search_submissions(score=min_score, sort='desc', sort_type='score', subreddit=subreddit, size=size, before=before, after=after, limit=limit)
 #     submissions_df = pd.DataFrame(submissions)
 #     text_date = dt.datetime.utcfromtimestamp(after).strftime("%d-%m-%Y")
 #     print(text_date)
@@ -31,12 +31,12 @@ limit = 1000000
 # Create subreddit and parameters
 subreddit="wallstreetbets"
 size = 500 # maximum submission size = 500
-min_score = '>100' # > here is >=
+min_score = '>50' # > here is >=
 api = PushshiftAPI()
 limit = 1000000    
 for i in tqdm(range(365)):
     after = before - (i+1)*60*60*24*1
-    comments = api.search_comments(score='>50', sort='desc', sort_type='score', subreddit=subreddit, size=size, before=before, after=after, limit=limit)
+    comments = api.search_comments(score=min_score, sort='desc', sort_type='score', subreddit=subreddit, size=size, before=before, after=after, limit=limit)
     comments_df = pd.DataFrame(comments)
     text_date = dt.datetime.utcfromtimestamp(after).strftime("%d-%m-%Y")
     print(text_date)
