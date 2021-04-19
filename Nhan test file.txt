@@ -1,3 +1,0 @@
-this is Nhan's test file
-This is the line Nhan typed in his local PC.
-This line will not show up in other's people file. So it will create a conflict because your 2nd and 3rd line are different
