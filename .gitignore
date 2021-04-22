@@ -7,3 +7,5 @@ comments/comments-total.csv
 trash/
 data.txt
 .ipynb_checkpoints/
+
+.DS_Store
