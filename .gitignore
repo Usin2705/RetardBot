@@ -9,3 +9,9 @@ data.txt
 .ipynb_checkpoints/
 
 .DS_Store
+
+clean_data.txt
+
+models/rnn_epoch_10.pt
+
+models/rnn_epoch_83_lr0001.pt
