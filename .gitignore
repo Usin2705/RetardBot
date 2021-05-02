@@ -15,3 +15,9 @@ clean_data.txt
 models/rnn_epoch_10.pt
 
 models/rnn_epoch_83_lr0001.pt
+
+data_sample_half.txt
+
+data_sample_quarter.txt
+
+RNN_data/
