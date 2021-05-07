@@ -21,3 +21,9 @@ data_sample_half.txt
 data_sample_quarter.txt
 
 RNN_data/
+
+models/
+
+SNLP presentation video.mp4
+
+data/data_sample_8x.txt
